@@ -1,3 +1,8 @@
 What happens when you initialize a repository? Why do you need to do it?
-- It creates the meta info for git use in a hidden folder called ".git"
+- It creates the meta info for git use in a hidden folder called ".git".
 - Without doing git init, the directory is just an ordinary directory/folder.
+
+How is the staging area different from the working directory and the repository? What value do you think it offers?
+- It's a git managed snapshot area that track additions of new files to a repo.
+- It helps to provide a working area for you to roll back files you may not want to commit to a repo, making the repo commit history easier to understand.
+
