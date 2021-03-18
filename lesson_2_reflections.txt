@@ -6,3 +6,8 @@ How is the staging area different from the working directory and the repository?
 - It's a git managed snapshot area that track additions of new files to a repo.
 - It helps to provide a working area for you to roll back files you may not want to commit to a repo, making the repo commit history easier to understand.
 
+How can you use the staging area to make sure you have one commit per logical change?
+- After making a change to a file, run git add to stage the change to staging area;
+- Then run git commit to commit to the git repo.
+- This way, there wil always be 1 commit to any single (logical) change.
+
