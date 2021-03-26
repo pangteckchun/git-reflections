@@ -11,3 +11,19 @@ How can you use the staging area to make sure you have one commit per logical ch
 - Then run git commit to commit to the git repo.
 - This way, there wil always be 1 commit to any single (logical) change.
 
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+- Branches help to logically organise a chunk of work to accomplish a certain goal
+- Using branches for changes related to that goal makes the commit history organised against that branch and not pollute the main "trunk", i.e. the master branch.
+
+How do the diagrams help you visualize the branch structure?
+- Diagrams help by showning visually which branches are inter-related along with their commits history.
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+- Merges all the codes and commit history of the 2 branches together with the checked out branch being the one being merged into
+- Use git log --graph --oneline to visual the commit history being merged from the 2 branches.
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+- Pros of automatic merging --> no need for manual interventions and saves time if 100% accurate all the time
+- Cons of automatic merging --> not technically possible and also if forcefuly done, will cause more error to program codes
+- Pros of always doing merges manually --> you have full control of what to merge and not to merge
+- Cons of always doing merges manually --> unproductive and still can be error prone if always done manually.
