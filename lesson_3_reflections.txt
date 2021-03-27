@@ -1,29 +1,44 @@
 When would you want to use a remote repository rather than keeping all your work
 local?
 
-    Fill in your answer here
+    So that if your computer crashes, your codes will be on a server and not lost.
 
 Why might you want to always pull changes manually rather than having Git
 automatically stay up-to-date with your remote repository?
 
-    Fill in your answer here
+    There maybe changes which we are not ready to be updated on our local, while we are doing changes.
+    A manual pull can bee timed when you are ready to rebase changes from remote repo.
 
 Describe the differences between forks, clones, and branches.  When would you
 use one instead of another?
 
-    Fill in your answer here
+    A fork is a clone of other people's repo onto your own remote repo on github.
+    A clone is getting a copy of a remote repo onto your local for making changes.
+    A branch is a way to compartmentalise different logical changes into their own respective branches,
+    so that we can do concurrent changes at any point in time without affecting say a main trunk of work (e.g. in master branch)
 
 What is the benefit of having a copy of the last known state of the remote
 stored locally?
 
-    Fill in your answer here
+    This is so we can keep track of what has changed in our remote branch, which will help us
+    to compare changes and pick how to merge those changes into our current local.
+    This helps especially if you are offline and have not synchronised your code from the remote branch for a while.
 
 How would you collaborate without using Git or GitHub?  What would be easier,
 and what would be harder?
 
-    Fill in your answer here
+    It will be harder but not impossible. Offline tracking of changes to be made might suffice.
+    Using Git or Github, with the PR feature is they way to do, which also improves auditability of why changes were required and made.
 
 When would you want to make changes in a separate branch rather than directly in
 master?  What benefits does each approach have?
 
-    Fill in your answer here
+    When you are collaborating with others on a common piece of work.
+    Using a branching strategy allow collaborators to work on their own changes independently in their own branches,
+    before using PRs to review changes and before finally merging into remote master branch.
+    This has the benefits of making concurrent changes independently without the risk of breaking the master,
+    which would the single source of truth for a working system at any point in time.
+
+    When contributing to a public repository, it’s standard practice to make the changes in a non-master branch within the fork.
+    This way, you can easily keep your master branch up-to-date with master of the original repository, and merge changes from
+    master into your branch when you are ready.
