@@ -100,4 +100,7 @@ h. Post merging, always update your local **master** by issuing another `git pul
 i. Run `git log -n 1` to view the latest commit log.  
 GitHub automatically creates a commit message whenever a pull request is merged to make it easy to see pull requests in the commit history. Even when the merge is a fast-forward merge, GitHub still creates this commit.
 
-1. Use `git remote add upstream [url.git of original repo from whicj you forked]` to add a link and have loca copies of the original repo branches, including **master** branch.
+1. Use `git remote add upstream [url.git of original repo from whicj you forked]` to add a link and have loca copies of the original repo branches, including **master** branch.  
+
+## Git concept map ##
+![Git concept map](./git-concept-map-final.png)
